@@ -13,6 +13,10 @@
 		EA1AE2142AEC05960061BF02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE2122AEC05960061BF02 /* Main.storyboard */; };
 		EA1AE2162AEC05970061BF02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE2152AEC05970061BF02 /* Assets.xcassets */; };
 		EA1AE2192AEC05970061BF02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE2172AEC05970061BF02 /* LaunchScreen.storyboard */; };
+		EA1AE2262AECD53F0061BF02 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AE2252AECD53F0061BF02 /* GameViewController.swift */; };
+		EA1AE2282AECD55B0061BF02 /* GameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE2272AECD55B0061BF02 /* GameViewController.storyboard */; };
+		EA1AE22A2AECE13E0061BF02 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AE2292AECE13E0061BF02 /* MapViewController.swift */; };
+		EA1AE22C2AECE14F0061BF02 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE22B2AECE14F0061BF02 /* MapViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		EA1AE2152AEC05970061BF02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA1AE2182AEC05970061BF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA1AE21A2AEC05970061BF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1AE2252AECD53F0061BF02 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EA1AE2272AECD55B0061BF02 /* GameViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameViewController.storyboard; sourceTree = "<group>"; };
+		EA1AE2292AECE13E0061BF02 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EA1AE22B2AECE14F0061BF02 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,8 @@
 		EA1AE2222AECC9BA0061BF02 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				EA1AE2252AECD53F0061BF02 /* GameViewController.swift */,
+				EA1AE2272AECD55B0061BF02 /* GameViewController.storyboard */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -94,6 +104,8 @@
 		EA1AE2232AECC9D10061BF02 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				EA1AE2292AECE13E0061BF02 /* MapViewController.swift */,
+				EA1AE22B2AECE14F0061BF02 /* MapViewController.storyboard */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -165,7 +177,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1AE22C2AECE14F0061BF02 /* MapViewController.storyboard in Resources */,
 				EA1AE2192AEC05970061BF02 /* LaunchScreen.storyboard in Resources */,
+				EA1AE2282AECD55B0061BF02 /* GameViewController.storyboard in Resources */,
 				EA1AE2162AEC05970061BF02 /* Assets.xcassets in Resources */,
 				EA1AE2142AEC05960061BF02 /* Main.storyboard in Resources */,
 			);
@@ -178,8 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1AE2262AECD53F0061BF02 /* GameViewController.swift in Sources */,
 				EA1AE2112AEC05960061BF02 /* ViewController.swift in Sources */,
 				EA1AE20D2AEC05960061BF02 /* AppDelegate.swift in Sources */,
+				EA1AE22A2AECE13E0061BF02 /* MapViewController.swift in Sources */,
 				EA1AE20F2AEC05960061BF02 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,9 +11,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    // MARK: - Actions
+    @IBAction func didTapStartButton() {
+        print("tap start")
+        let storyboard = UIStoryboard(name: "GameViewController", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
