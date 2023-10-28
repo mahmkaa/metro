@@ -56,15 +56,55 @@
 		EA1AE20B2AEC05960061BF02 /* metroTextGame */ = {
 			isa = PBXGroup;
 			children = (
-				EA1AE20C2AEC05960061BF02 /* AppDelegate.swift */,
-				EA1AE20E2AEC05960061BF02 /* SceneDelegate.swift */,
-				EA1AE2102AEC05960061BF02 /* ViewController.swift */,
-				EA1AE2122AEC05960061BF02 /* Main.storyboard */,
+				EA1AE2242AECC9F30061BF02 /* Application */,
+				EA1AE2232AECC9D10061BF02 /* Map */,
+				EA1AE2222AECC9BA0061BF02 /* Game */,
+				EA1AE2212AECC9920061BF02 /* Main */,
+				EA1AE2202AECC97B0061BF02 /* Resources */,
+			);
+			path = metroTextGame;
+			sourceTree = "<group>";
+		};
+		EA1AE2202AECC97B0061BF02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				EA1AE2152AEC05970061BF02 /* Assets.xcassets */,
 				EA1AE2172AEC05970061BF02 /* LaunchScreen.storyboard */,
 				EA1AE21A2AEC05970061BF02 /* Info.plist */,
 			);
-			path = metroTextGame;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA1AE2212AECC9920061BF02 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EA1AE2102AEC05960061BF02 /* ViewController.swift */,
+				EA1AE2122AEC05960061BF02 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EA1AE2222AECC9BA0061BF02 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		EA1AE2232AECC9D10061BF02 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		EA1AE2242AECC9F30061BF02 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EA1AE20C2AEC05960061BF02 /* AppDelegate.swift */,
+				EA1AE20E2AEC05960061BF02 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +334,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 532T45L6HD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = metroTextGame/Info.plist;
+				INFOPLIST_FILE = metroTextGame/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 532T45L6HD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = metroTextGame/Info.plist;
+				INFOPLIST_FILE = metroTextGame/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
