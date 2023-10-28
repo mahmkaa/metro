@@ -17,6 +17,7 @@
 		EA1AE2282AECD55B0061BF02 /* GameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE2272AECD55B0061BF02 /* GameViewController.storyboard */; };
 		EA1AE22A2AECE13E0061BF02 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AE2292AECE13E0061BF02 /* MapViewController.swift */; };
 		EA1AE22C2AECE14F0061BF02 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE22B2AECE14F0061BF02 /* MapViewController.storyboard */; };
+		EA1AE2312AED10450061BF02 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA1AE2302AED10450061BF02 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1AE2312AED10450061BF02 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +137,9 @@
 			dependencies = (
 			);
 			name = metroTextGame;
+			packageProductDependencies = (
+				EA1AE2302AED10450061BF02 /* SnapKit */,
+			);
 			productName = metroTextGame;
 			productReference = EA1AE2092AEC05960061BF02 /* metroTextGame.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +168,9 @@
 				Base,
 			);
 			mainGroup = EA1AE2002AEC05960061BF02;
+			packageReferences = (
+				EA1AE22F2AED10450061BF02 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = EA1AE20A2AEC05960061BF02 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -419,6 +427,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA1AE22F2AED10450061BF02 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA1AE2302AED10450061BF02 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA1AE22F2AED10450061BF02 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA1AE2012AEC05960061BF02 /* Project object */;
 }

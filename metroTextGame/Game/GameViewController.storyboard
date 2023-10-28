@@ -19,18 +19,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tunnel" translatesAutoresizingMaskIntoConstraints="NO" id="Ftj-Cf-B17">
                                 <rect key="frame" x="-763.66666666666663" y="-114" width="1920.333333333333" height="1080"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiR-e0-7lM">
-                                <rect key="frame" x="323" y="87" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="map" catalog="system" cornerStyle="capsule">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="didTapMapButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Vhz-MA-SdI"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAR-Px-iFA">
                                 <rect key="frame" x="50" y="668" width="120" height="50"/>
                                 <constraints>
@@ -78,7 +66,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="map" catalog="system" width="128" height="112"/>
         <image name="tunnel" width="1920" height="1080"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
