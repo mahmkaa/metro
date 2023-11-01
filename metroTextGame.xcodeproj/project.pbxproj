@@ -17,7 +17,9 @@
 		EA1AE2282AECD55B0061BF02 /* GameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE2272AECD55B0061BF02 /* GameViewController.storyboard */; };
 		EA1AE22A2AECE13E0061BF02 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AE2292AECE13E0061BF02 /* MapViewController.swift */; };
 		EA1AE22C2AECE14F0061BF02 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE22B2AECE14F0061BF02 /* MapViewController.storyboard */; };
-		EA1AE2312AED10450061BF02 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA1AE2302AED10450061BF02 /* SnapKit */; };
+		EA1AE2332AED28E10061BF02 /* MapModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AE2322AED28E10061BF02 /* MapModalViewController.swift */; };
+		EA1AE2352AED29910061BF02 /* MapModalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE2342AED29910061BF02 /* MapModalViewController.storyboard */; };
+		EA76DCFF2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76DCFE2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,9 @@
 		EA1AE2272AECD55B0061BF02 /* GameViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameViewController.storyboard; sourceTree = "<group>"; };
 		EA1AE2292AECE13E0061BF02 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EA1AE22B2AECE14F0061BF02 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		EA1AE2322AED28E10061BF02 /* MapModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModalViewController.swift; sourceTree = "<group>"; };
+		EA1AE2342AED29910061BF02 /* MapModalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapModalViewController.storyboard; sourceTree = "<group>"; };
+		EA76DCFE2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarVisibilityDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1AE2312AED10450061BF02 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +112,8 @@
 			children = (
 				EA1AE2292AECE13E0061BF02 /* MapViewController.swift */,
 				EA1AE22B2AECE14F0061BF02 /* MapViewController.storyboard */,
+				EA1AE2322AED28E10061BF02 /* MapModalViewController.swift */,
+				EA1AE2342AED29910061BF02 /* MapModalViewController.storyboard */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -117,6 +123,7 @@
 			children = (
 				EA1AE20C2AEC05960061BF02 /* AppDelegate.swift */,
 				EA1AE20E2AEC05960061BF02 /* SceneDelegate.swift */,
+				EA76DCFE2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -138,7 +145,6 @@
 			);
 			name = metroTextGame;
 			packageProductDependencies = (
-				EA1AE2302AED10450061BF02 /* SnapKit */,
 			);
 			productName = metroTextGame;
 			productReference = EA1AE2092AEC05960061BF02 /* metroTextGame.app */;
@@ -169,7 +175,6 @@
 			);
 			mainGroup = EA1AE2002AEC05960061BF02;
 			packageReferences = (
-				EA1AE22F2AED10450061BF02 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = EA1AE20A2AEC05960061BF02 /* Products */;
 			projectDirPath = "";
@@ -189,6 +194,7 @@
 				EA1AE2192AEC05970061BF02 /* LaunchScreen.storyboard in Resources */,
 				EA1AE2282AECD55B0061BF02 /* GameViewController.storyboard in Resources */,
 				EA1AE2162AEC05970061BF02 /* Assets.xcassets in Resources */,
+				EA1AE2352AED29910061BF02 /* MapModalViewController.storyboard in Resources */,
 				EA1AE2142AEC05960061BF02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,10 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA1AE2262AECD53F0061BF02 /* GameViewController.swift in Sources */,
+				EA1AE2332AED28E10061BF02 /* MapModalViewController.swift in Sources */,
 				EA1AE2112AEC05960061BF02 /* ViewController.swift in Sources */,
 				EA1AE20D2AEC05960061BF02 /* AppDelegate.swift in Sources */,
 				EA1AE22A2AECE13E0061BF02 /* MapViewController.swift in Sources */,
 				EA1AE20F2AEC05960061BF02 /* SceneDelegate.swift in Sources */,
+				EA76DCFF2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,25 +435,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		EA1AE22F2AED10450061BF02 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.6.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		EA1AE2302AED10450061BF02 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EA1AE22F2AED10450061BF02 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA1AE2012AEC05960061BF02 /* Project object */;
 }
