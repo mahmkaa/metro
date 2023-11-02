@@ -17,10 +17,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tunnel" translatesAutoresizingMaskIntoConstraints="NO" id="Ftj-Cf-B17">
-                                <rect key="frame" x="-763.66666666666663" y="-114" width="1920.333333333333" height="1080"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="852" id="Tv2-jv-fHT"/>
+                                    <constraint firstAttribute="width" constant="393" id="W7Y-py-Ca7"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ebe-AK-YRI">
+                                <rect key="frame" x="16" y="80" width="361" height="470"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="UZe-ZM-IRc"/>
+                                    <constraint firstAttribute="height" constant="470" id="njH-tc-1cs"/>
+                                </constraints>
+                                <string key="text">**это лишь пример текста** За 50 ходов вам надо добраться до конечной станции. Учтите, при пересадке ход тратится. \n Вам надо добраться до станции Автово(Красная ветка)</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <lineBreakStrategy key="lineBreakStrategy"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAR-Px-iFA">
-                                <rect key="frame" x="50" y="668" width="120" height="50"/>
+                                <rect key="frame" x="50" y="599" width="120" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4kX-wX-DQ9"/>
                                     <constraint firstAttribute="width" constant="120" id="bgy-eK-d9X"/>
@@ -28,9 +44,12 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Выбор 1" cornerStyle="medium"/>
+                                <connections>
+                                    <action selector="didTapButtonV1" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UI2-fr-DAq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ih6-9a-xNO">
-                                <rect key="frame" x="223" y="668" width="120" height="50"/>
+                                <rect key="frame" x="223" y="599" width="120" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="GkG-cQ-Gqo"/>
                                     <constraint firstAttribute="height" constant="50" id="wTg-0C-5HF"/>
@@ -38,27 +57,45 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Выбор 2" cornerStyle="medium"/>
+                                <connections>
+                                    <action selector="didTapButtonV2" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JsM-Qf-wpU"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ebe-AK-YRI">
-                                <rect key="frame" x="16" y="148" width="361" height="470"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Предположим, что метро опустело и все таблички исчезли. Из доступного у вас только старая карта, которая готова рассыпаться в любой момент. Вам необходимо добраться от начальной станции до конечной.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJi-V5-iaY">
+                                <rect key="frame" x="136.66666666666666" y="686" width="119.99999999999997" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="aJl-8T-nph"/>
+                                    <constraint firstAttribute="height" constant="53" id="iDs-1T-suC"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Выбор 3" cornerStyle="medium"/>
+                                <connections>
+                                    <action selector="didTapButtonV3" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uoY-xT-5ed"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ftj-Cf-B17" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Dgx-u2-iNG"/>
-                            <constraint firstItem="PAR-Px-iFA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="MD5-w3-OaY"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ih6-9a-xNO" secondAttribute="bottom" constant="100" id="N82-e0-L2A"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ih6-9a-xNO" secondAttribute="trailing" constant="50" id="ezd-SO-v81"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PAR-Px-iFA" secondAttribute="bottom" constant="100" id="pst-Vj-1lI"/>
-                            <constraint firstItem="Ftj-Cf-B17" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="sSt-Sb-rcH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ih6-9a-xNO" secondAttribute="trailing" constant="50" id="0yt-Jg-91Q"/>
+                            <constraint firstItem="PAR-Px-iFA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="1bi-SN-Wu8"/>
+                            <constraint firstItem="ebe-AK-YRI" firstAttribute="bottom" secondItem="oJi-V5-iaY" secondAttribute="bottom" constant="-189" id="6DT-LR-OWN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="oJi-V5-iaY" secondAttribute="bottom" constant="79" id="8Ti-Ek-fbe"/>
+                            <constraint firstItem="Ftj-Cf-B17" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="BwB-Ti-giy"/>
+                            <constraint firstItem="oJi-V5-iaY" firstAttribute="top" secondItem="PAR-Px-iFA" secondAttribute="bottom" constant="37" id="Idh-RR-Oa0"/>
+                            <constraint firstItem="oJi-V5-iaY" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="PtZ-v8-Mqq"/>
+                            <constraint firstItem="oJi-V5-iaY" firstAttribute="top" secondItem="ih6-9a-xNO" secondAttribute="bottom" constant="37" id="Sk9-J6-Dsn"/>
+                            <constraint firstItem="Ftj-Cf-B17" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="gbh-5T-dCR"/>
+                            <constraint firstItem="ebe-AK-YRI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nZr-yp-0Yt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonV1" destination="PAR-Px-iFA" id="heL-8N-mff"/>
+                        <outlet property="buttonV2" destination="ih6-9a-xNO" id="b3T-Hd-HDh"/>
+                        <outlet property="buttonV3" destination="oJi-V5-iaY" id="pDt-jU-kEf"/>
+                        <outlet property="gameLabel" destination="ebe-AK-YRI" id="4cW-Wt-uSW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

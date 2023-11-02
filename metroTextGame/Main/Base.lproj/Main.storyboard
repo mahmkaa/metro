@@ -16,8 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbd-UG-EwK">
-                                <rect key="frame" x="145.66666666666666" y="404" width="102" height="44"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tunnel" translatesAutoresizingMaskIntoConstraints="NO" id="Bk4-2J-b86">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="852" id="5V4-7B-ABf"/>
+                                    <constraint firstAttribute="width" constant="393" id="ZcW-Fu-6oj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbd-UG-EwK">
+                                <rect key="frame" x="145" y="549" width="102" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="START">
@@ -27,12 +35,25 @@
                                     <action selector="didTapStartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ijy-5E-9Ty"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ce-Sa-q5h">
+                                <rect key="frame" x="32" y="103" width="328" height="425"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="425" id="RSI-bh-PVm"/>
+                                    <constraint firstAttribute="width" constant="328" id="whu-VB-6Xl"/>
+                                </constraints>
+                                <string key="text">Предположим, что метро опустело и все таблички исчезли. Из доступного у вас только старая карта, которая готова рассыпаться в любой момент. Вам необходимо добраться от начальной станции до конечной.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zbd-UG-EwK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8B-43-fmQ"/>
-                            <constraint firstItem="zbd-UG-EwK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="whg-Hf-cCX"/>
+                            <constraint firstItem="1ce-Sa-q5h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H7A-TA-S5Y"/>
+                            <constraint firstItem="Bk4-2J-b86" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dMN-rT-qZP"/>
+                            <constraint firstItem="1ce-Sa-q5h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-110.5" id="hga-fR-070"/>
+                            <constraint firstItem="Bk4-2J-b86" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nii-Vv-U27"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KYE-5n-lYE"/>
@@ -62,6 +83,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="tunnel" width="1920" height="1080"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

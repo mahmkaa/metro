@@ -20,6 +20,7 @@
 		EA1AE2332AED28E10061BF02 /* MapModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AE2322AED28E10061BF02 /* MapModalViewController.swift */; };
 		EA1AE2352AED29910061BF02 /* MapModalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE2342AED29910061BF02 /* MapModalViewController.storyboard */; };
 		EA76DCFF2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76DCFE2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift */; };
+		EA76DD012AF3BAA9009E3838 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76DD002AF3BAA9009E3838 /* GameLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EA1AE2322AED28E10061BF02 /* MapModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModalViewController.swift; sourceTree = "<group>"; };
 		EA1AE2342AED29910061BF02 /* MapModalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapModalViewController.storyboard; sourceTree = "<group>"; };
 		EA76DCFE2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarVisibilityDelegate.swift; sourceTree = "<group>"; };
+		EA76DD002AF3BAA9009E3838 /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		EA1AE2222AECC9BA0061BF02 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				EA76DD002AF3BAA9009E3838 /* GameLogic.swift */,
 				EA1AE2252AECD53F0061BF02 /* GameViewController.swift */,
 				EA1AE2272AECD55B0061BF02 /* GameViewController.storyboard */,
 			);
@@ -208,6 +211,7 @@
 			files = (
 				EA1AE2262AECD53F0061BF02 /* GameViewController.swift in Sources */,
 				EA1AE2332AED28E10061BF02 /* MapModalViewController.swift in Sources */,
+				EA76DD012AF3BAA9009E3838 /* GameLogic.swift in Sources */,
 				EA1AE2112AEC05960061BF02 /* ViewController.swift in Sources */,
 				EA1AE20D2AEC05960061BF02 /* AppDelegate.swift in Sources */,
 				EA1AE22A2AECE13E0061BF02 /* MapViewController.swift in Sources */,
@@ -370,8 +374,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,8 +402,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,4 +7,5 @@
 
 protocol NavigationBarVisibilityDelegate: class {
     func setNavigationBarHidden(_ isHidden: Bool, animated: Bool)
+    func isHidden(_ isHidden: Bool)
 }

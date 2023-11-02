@@ -52,6 +52,7 @@ class MapModalViewController: UIViewController {
     
     @objc func closeTapped() {
         navigationBarVisibilityDelegate?.setNavigationBarHidden(false, animated: true)
+        navigationBarVisibilityDelegate?.isHidden(false)
         dismiss(animated: true)
     }
 }
