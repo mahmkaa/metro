@@ -7,12 +7,13 @@
 
 import UIKit
 
-class GameViewController: UIViewController, NavigationBarVisibilityDelegate {
+class GameViewController: UIViewController, NavigationBarVisibilityDelegate, GameLogicDelegate {
     var gameLogic: GameLogic = GameLogic()
     
     @IBOutlet weak var buttonV1: UIButton!
     @IBOutlet weak var buttonV2: UIButton!
     @IBOutlet weak var buttonV3: UIButton!
+    @IBOutlet weak var buttonV4: UIButton!
     @IBOutlet weak var gameLabel: UILabel!
     
     override func viewDidLoad() {
@@ -34,17 +35,36 @@ class GameViewController: UIViewController, NavigationBarVisibilityDelegate {
         )
         
         navigationItem.leftBarButtonItem = backButton
+        
+        gameLogic = GameLogic()
+        gameLogic.delegate = self
+        gameLogic.startNewGame()
     }
     
     // MARK: - Actions
     @IBAction func didTapButtonV1() {
         print("tap v1")
+        let choiceIndex = 0
+        handleChoice(for: choiceIndex)
     }
     @IBAction func didTapButtonV2() {
         print("tap v2")
+        let choiceIndex = 1
+        handleChoice(for: choiceIndex)
     }
     @IBAction func didTapButtonV3() {
         print("tap v3")
+        let choiceIndex = 2
+        handleChoice(for: choiceIndex)
+    }
+    @IBAction func didTapButtonV4() {
+        print("tap v4")
+        let choiceIndex = buttonV4.isHidden ? 3 : 0
+        handleChoice(for: choiceIndex)
+    }
+    
+    func handleChoice(for choiceIndex: Int) {
+        gameLogic.playerChoice(choiceIndex)
     }
     
     // MARK: - Selectors
@@ -56,6 +76,7 @@ class GameViewController: UIViewController, NavigationBarVisibilityDelegate {
         buttonV1.isHidden = true
         buttonV2.isHidden = true
         buttonV3.isHidden = true
+        buttonV4.isHidden = true
         detailImageVC.navigationBarVisibilityDelegate = self
         present(detailImageVC, animated: true)
     }
@@ -89,5 +110,78 @@ class GameViewController: UIViewController, NavigationBarVisibilityDelegate {
         buttonV1.isHidden = isHidden
         buttonV2.isHidden = isHidden
         buttonV3.isHidden = isHidden
+        buttonV4.isHidden = isHidden
     }
+    
+    func updateGameScene(text: String, choice: [String]) {
+        gameLabel.text = text
+        
+        let choiceButtons = [buttonV1, buttonV2, buttonV3, buttonV4]
+        let choiceTexts = choice
+        
+        if choice.count == 1 {
+            buttonV4.isHidden = false
+            buttonV1.isHidden = true
+            buttonV2.isHidden = true
+            buttonV3.isHidden = true
+            buttonV4.setTitle(choice[0], for: .normal)
+        } else {
+            buttonV4.isHidden = true
+            for (index, button) in choiceButtons.prefix(choice.count).enumerated() {
+                button?.isHidden = false
+                button?.setTitle(choice[index], for: .normal)
+            }
+        }
+//        if choice.count == 1 {
+//            buttonV4.isHidden = false
+//            buttonV1.isHidden = true
+//            buttonV2.isHidden = true
+//            buttonV3.isHidden = true
+//            
+//            buttonV4.setTitle(choice[0], for: .normal)
+//        }
+//        
+//        if choice.count == 2 {
+//            buttonV1.isHidden = false
+//            buttonV2.isHidden = false
+//            buttonV3.isHidden = true
+//            buttonV4.isHidden = true
+//            
+//            buttonV1.setTitle(choice[0], for: .normal)
+//            buttonV2.setTitle(choice[1], for: .normal)
+//        }
+//        
+//        if choice.count == 3 {
+//            buttonV1.isHidden = false
+//            buttonV2.isHidden = false
+//            buttonV3.isHidden = false
+//            buttonV4.isHidden = true
+//            
+//            buttonV1.setTitle(choice[0], for: .normal)
+//            buttonV2.setTitle(choice[1], for: .normal)
+//            buttonV3.setTitle(choice[2], for: .normal)
+//        }
+//        
+//        if choice.count >= 4 {
+//            buttonV1.isHidden = false
+//            buttonV2.isHidden = false
+//            buttonV3.isHidden = false
+//            buttonV4.isHidden = false
+//            
+//            buttonV1.setTitle(choice[1], for: .normal)
+//            buttonV2.setTitle(choice[2], for: .normal)
+//            buttonV3.setTitle(choice[3], for: .normal)
+//            buttonV4.setTitle(choice[0], for: .normal)
+//        }
+    }
+    
+    func gameOver(message: String) {
+        gameLabel.text = message
+        
+        buttonV1.isHidden = true
+        buttonV2.isHidden = true
+        buttonV3.isHidden = true
+        buttonV4.isHidden = true
+    }
+    
 }

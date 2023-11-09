@@ -21,6 +21,7 @@
 		EA1AE2352AED29910061BF02 /* MapModalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1AE2342AED29910061BF02 /* MapModalViewController.storyboard */; };
 		EA76DCFF2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76DCFE2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift */; };
 		EA76DD012AF3BAA9009E3838 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76DD002AF3BAA9009E3838 /* GameLogic.swift */; };
+		EA76DD042AF3D712009E3838 /* GameLogicDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76DD032AF3D712009E3838 /* GameLogicDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EA1AE2342AED29910061BF02 /* MapModalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapModalViewController.storyboard; sourceTree = "<group>"; };
 		EA76DCFE2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarVisibilityDelegate.swift; sourceTree = "<group>"; };
 		EA76DD002AF3BAA9009E3838 /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		EA76DD032AF3D712009E3838 /* GameLogicDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogicDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		EA1AE20B2AEC05960061BF02 /* metroTextGame */ = {
 			isa = PBXGroup;
 			children = (
+				EA76DD022AF3D6EC009E3838 /* Delegate */,
 				EA1AE2242AECC9F30061BF02 /* Application */,
 				EA1AE2232AECC9D10061BF02 /* Map */,
 				EA1AE2222AECC9BA0061BF02 /* Game */,
@@ -126,9 +129,17 @@
 			children = (
 				EA1AE20C2AEC05960061BF02 /* AppDelegate.swift */,
 				EA1AE20E2AEC05960061BF02 /* SceneDelegate.swift */,
-				EA76DCFE2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		EA76DD022AF3D6EC009E3838 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EA76DCFE2AF27221009E3838 /* NavigationBarVisibilityDelegate.swift */,
+				EA76DD032AF3D712009E3838 /* GameLogicDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 			files = (
 				EA1AE2262AECD53F0061BF02 /* GameViewController.swift in Sources */,
 				EA1AE2332AED28E10061BF02 /* MapModalViewController.swift in Sources */,
+				EA76DD042AF3D712009E3838 /* GameLogicDelegate.swift in Sources */,
 				EA76DD012AF3BAA9009E3838 /* GameLogic.swift in Sources */,
 				EA1AE2112AEC05960061BF02 /* ViewController.swift in Sources */,
 				EA1AE20D2AEC05960061BF02 /* AppDelegate.swift in Sources */,
