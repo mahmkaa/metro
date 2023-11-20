@@ -58,8 +58,13 @@ class GameViewController: UIViewController, NavigationBarVisibilityDelegate, Gam
         handleChoice(for: choiceIndex)
     }
     @IBAction func didTapButtonV4() {
-        print("tap v4")
-        let choiceIndex = buttonV4.isHidden ? 3 : 0
+        var choiceIndex = 0
+        
+        if buttonV1.isHidden == false || buttonV2.isHidden == false || buttonV3.isHidden == false {
+            choiceIndex = 3
+        }
+        
+        print("tap v4 with choice index = \(choiceIndex)")
         handleChoice(for: choiceIndex)
     }
     
@@ -119,60 +124,60 @@ class GameViewController: UIViewController, NavigationBarVisibilityDelegate, Gam
         let choiceButtons = [buttonV1, buttonV2, buttonV3, buttonV4]
         let choiceTexts = choice
         
-        if choice.count == 1 {
-            buttonV4.isHidden = false
-            buttonV1.isHidden = true
-            buttonV2.isHidden = true
-            buttonV3.isHidden = true
-            buttonV4.setTitle(choice[0], for: .normal)
-        } else {
-            buttonV4.isHidden = true
-            for (index, button) in choiceButtons.prefix(choice.count).enumerated() {
-                button?.isHidden = false
-                button?.setTitle(choice[index], for: .normal)
-            }
-        }
 //        if choice.count == 1 {
 //            buttonV4.isHidden = false
 //            buttonV1.isHidden = true
 //            buttonV2.isHidden = true
 //            buttonV3.isHidden = true
-//            
 //            buttonV4.setTitle(choice[0], for: .normal)
-//        }
-//        
-//        if choice.count == 2 {
-//            buttonV1.isHidden = false
-//            buttonV2.isHidden = false
-//            buttonV3.isHidden = true
+//        } else {
 //            buttonV4.isHidden = true
-//            
-//            buttonV1.setTitle(choice[0], for: .normal)
-//            buttonV2.setTitle(choice[1], for: .normal)
+//            for (index, button) in choiceButtons.prefix(choice.count).enumerated() {
+//                button?.isHidden = false
+//                button?.setTitle(choice[index], for: .normal)
+//            }
 //        }
-//        
-//        if choice.count == 3 {
-//            buttonV1.isHidden = false
-//            buttonV2.isHidden = false
-//            buttonV3.isHidden = false
-//            buttonV4.isHidden = true
-//            
-//            buttonV1.setTitle(choice[0], for: .normal)
-//            buttonV2.setTitle(choice[1], for: .normal)
-//            buttonV3.setTitle(choice[2], for: .normal)
-//        }
-//        
-//        if choice.count >= 4 {
-//            buttonV1.isHidden = false
-//            buttonV2.isHidden = false
-//            buttonV3.isHidden = false
-//            buttonV4.isHidden = false
-//            
-//            buttonV1.setTitle(choice[1], for: .normal)
-//            buttonV2.setTitle(choice[2], for: .normal)
-//            buttonV3.setTitle(choice[3], for: .normal)
-//            buttonV4.setTitle(choice[0], for: .normal)
-//        }
+        if choice.count == 1 {
+            buttonV4.isHidden = false
+            buttonV1.isHidden = true
+            buttonV2.isHidden = true
+            buttonV3.isHidden = true
+            
+            buttonV4.setTitle(choice[0], for: .normal)
+        }
+        
+        if choice.count == 2 {
+            buttonV1.isHidden = false
+            buttonV2.isHidden = false
+            buttonV3.isHidden = true
+            buttonV4.isHidden = true
+            
+            buttonV1.setTitle(choice[0], for: .normal)
+            buttonV2.setTitle(choice[1], for: .normal)
+        }
+        
+        if choice.count == 3 {
+            buttonV1.isHidden = false
+            buttonV2.isHidden = false
+            buttonV3.isHidden = false
+            buttonV4.isHidden = true
+            
+            buttonV1.setTitle(choice[0], for: .normal)
+            buttonV2.setTitle(choice[1], for: .normal)
+            buttonV3.setTitle(choice[2], for: .normal)
+        }
+        
+        if choice.count >= 4 {
+            buttonV1.isHidden = false
+            buttonV2.isHidden = false
+            buttonV3.isHidden = false
+            buttonV4.isHidden = false
+            
+            buttonV1.setTitle(choice[0], for: .normal)
+            buttonV2.setTitle(choice[1], for: .normal)
+            buttonV3.setTitle(choice[2], for: .normal)
+            buttonV4.setTitle(choice[3], for: .normal)
+        }
     }
     
     func gameOver(message: String) {
